@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.MainView">
    <children>
       <Label layoutX="153.0" layoutY="75.0" text="Welcome to the attendance hub">
@@ -17,7 +16,7 @@
       </Label>
       <ImageView fitHeight="132.0" fitWidth="165.0" layoutX="234.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/easv-logo-transparent.png" />
+            <Image url="@../images/easv-logo-transparent.png" />
          </image>
       </ImageView>
       <Button layoutX="129.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" text="Teacher" />
