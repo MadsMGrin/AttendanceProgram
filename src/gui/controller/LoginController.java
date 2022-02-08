@@ -15,6 +15,8 @@ import java.io.IOException;
 
 public class LoginController {
 
+    private boolean teacherMode;
+
     @FXML
     private AnchorPane root;
 
@@ -24,8 +26,12 @@ public class LoginController {
     @FXML
     private PasswordField passwordTxt;
 
+    public void setTeacherMode(boolean teacherMode) {
+        this.teacherMode = teacherMode;
+    }
+
     @FXML
-    void handleCancel(ActionEvent event) throws IOException {
+    private void handleCancel(ActionEvent event) throws IOException {
         ((Stage) root.getScene().getWindow()).close();
 
         Parent newRoot = FXMLLoader.load(getClass().getResource("../view/MainView.fxml"));
@@ -36,8 +42,21 @@ public class LoginController {
     }
 
     @FXML
-    void handleOk(ActionEvent event) {
+    private void handleOk(ActionEvent event) throws IOException {
+        if (!usernameTxt.getText().isEmpty()&&!passwordTxt.getText().isEmpty()){
+            login(teacherMode);
+        }
+    }
 
+    private void login(boolean teacherMode) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../view/TeachersHubView.fxml"));
+        if (!teacherMode)
+            root = FXMLLoader.load(getClass().getResource("../view/StudentView.fxml"));
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

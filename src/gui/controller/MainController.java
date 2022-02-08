@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -24,15 +23,16 @@ public class MainController {
     }
 
     public void handleStudent(ActionEvent actionEvent) throws IOException {
-        openLoginWindow();
+        openLoginWindow(false);
     }
 
     public void handleTeacher(ActionEvent actionEvent) throws IOException {
-        openLoginWindow();
+        openLoginWindow(true);
     }
 
-    private void openLoginWindow() throws IOException {
-        Parent newRoot = FXMLLoader.load(getClass().getResource("../view/LoginView.fxml"));
+    private void openLoginWindow(boolean b) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/LoginView.fxml"));
+        Parent newRoot = loader.load();
         Scene scene = new Scene(newRoot);
         Stage newStage = new Stage();
         newStage.setScene(scene);
@@ -40,5 +40,8 @@ public class MainController {
 
         Stage stage = ((Stage) root.getScene().getWindow());
         stage.close();
+
+        LoginController controller = loader.getController();
+        controller.setTeacherMode(b);
     }
 }
