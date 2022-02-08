@@ -8,8 +8,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.stage.Window;
+
 
 import java.io.IOException;
 
@@ -52,9 +53,9 @@ public class LoginController {
         Parent root = FXMLLoader.load(getClass().getResource("../view/TeachersHubView.fxml"));
         if (!teacherMode)
             root = FXMLLoader.load(getClass().getResource("../view/StudentView.fxml"));
-
+        
         Scene scene = new Scene(root);
-        Stage stage = new Stage();
+        Stage stage = ((Stage) this.root.getScene().getWindow());
         stage.setScene(scene);
         stage.show();
     }

@@ -34,12 +34,9 @@ public class MainController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/LoginView.fxml"));
         Parent newRoot = loader.load();
         Scene scene = new Scene(newRoot);
-        Stage newStage = new Stage();
-        newStage.setScene(scene);
-        newStage.show();
-
         Stage stage = ((Stage) root.getScene().getWindow());
-        stage.close();
+        stage.setScene(scene);
+        stage.show();
 
         LoginController controller = loader.getController();
         controller.setTeacherMode(b);
