@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainController">
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainController">
    <children>
       <Label layoutX="153.0" layoutY="75.0" text="Welcome to the attendance hub">
          <font>
@@ -19,8 +19,8 @@
             <Image url="@../images/easv-logo-transparent.png" />
          </image>
       </ImageView>
-      <Button layoutX="129.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" text="Teacher" />
-      <Button layoutX="366.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" text="Student" />
+      <Button layoutX="129.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleTeacher" prefHeight="105.0" prefWidth="105.0" text="Teacher" />
+      <Button layoutX="366.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleStudent" prefHeight="105.0" prefWidth="105.0" text="Student" />
       <Label layoutX="208.0" layoutY="160.0" text="Please select which applies to you" />
    </children>
 </AnchorPane>
