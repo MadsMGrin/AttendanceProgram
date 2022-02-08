@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainController">
+   <children>
+      <Label layoutX="153.0" layoutY="75.0" text="Welcome to the attendance hub">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="165.0" layoutX="234.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/easv-logo-transparent.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="129.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" text="Teacher" />
+      <Button layoutX="366.0" layoutY="188.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" text="Student" />
+      <Label layoutX="208.0" layoutY="160.0" text="Please select which applies to you" />
+   </children>
+</AnchorPane>
