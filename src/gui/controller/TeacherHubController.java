@@ -12,9 +12,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class TeacherHubController {
     MainModel mainModel= new MainModel();
     @FXML
-    private TableColumn <Classes, String> classNameColumn, classSizeColumn;
-    @FXML
-    private TableColumn <Teacher, String> teacherColumn;
+    private TableColumn <Classes, String> classNameColumn,teacherColumn, classSizeColumn;
     @FXML
     private TableView<Classes> tableView;
     @FXML
@@ -36,6 +34,7 @@ public class TeacherHubController {
     private void tableViewProperty() {
         classNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         classSizeColumn.setCellValueFactory(new PropertyValueFactory<>("amount"));
+        teacherColumn.setCellValueFactory(new PropertyValueFactory<>("teacher"));
         tableView.setItems(mainModel.getClassesObservableList());
     }
 
