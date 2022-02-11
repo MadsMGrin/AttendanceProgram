@@ -33,9 +33,6 @@ public class MainModel {
     public MainModel()
     {
         ClassesList = FXCollections.observableArrayList();
-        ClassesList.add(new Classes("klassa1",2131,"Antonio"));
-        ClassesList.add(new Classes("klassa2",2138956781,"Roberto"));
-        ClassesList.add(new Classes("klassa3",2678, "Cosma"));
     }
 
     public ObservableList<Classes> getClassesList() {
