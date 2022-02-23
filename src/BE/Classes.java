@@ -38,4 +38,6 @@ public class Classes {
     public void setTeacher(String teacher) {
         this.teacher = teacher;
     }
+
+    public List<Student> getAllStudentsInClass() {return studentList;}
 }
