@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="393.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.TeacherStatView">
+<AnchorPane prefHeight="393.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.TeacherStatController">
    <children>
       <Label layoutX="315.0" layoutY="14.0" text="Class: Name">
          <font>
@@ -31,13 +30,13 @@
       </TableView>
       <TabPane layoutX="38.0" layoutY="66.0" prefHeight="282.0" prefWidth="458.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="38.0">
         <tabs>
-          <Tab text="Untitled Tab 2">
+          <Tab text="ITO">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart layoutX="-21.0" layoutY="-131.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <LineChart fx:id="chartOne" layoutX="-21.0" layoutY="-131.0" prefHeight="250.0" prefWidth="460.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <xAxis>
-                            <CategoryAxis side="BOTTOM" />
+                            <NumberAxis side="BOTTOM" />
                           </xAxis>
                           <yAxis>
                             <NumberAxis side="LEFT" />
@@ -47,6 +46,51 @@
                   </AnchorPane>
             </content>
           </Tab>
+            <Tab text="SCO">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="chartTwo" prefHeight="250.0" prefWidth="460.0">
+                           <xAxis>
+                              <NumberAxis  side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="SDE">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="chartThree" prefHeight="250.0" prefWidth="460.0">
+                           <xAxis>
+                              <NumberAxis  side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="DB/OS">
+              <content>
+                <AnchorPane fx:id="tabAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="chartFour" prefHeight="250.0" prefWidth="460.0">
+                           <xAxis>
+                              <NumberAxis  side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
         </tabs>
       </TabPane>
       <Button fx:id="backBTN" layoutX="38.0" layoutY="348.0" mnemonicParsing="false" text="Back" />
