@@ -31,6 +31,13 @@ public class MainModel {
     public MainModel()
     {
         bllFacade = new AttendanceManager();
+    }
 
+    public ObservableList queryClasses(String query) {
+        return bllFacade.queryClasses(query);
+    }
+
+    public ObservableList queryStudents(String text) {
+        return bllFacade.queryStudents(text);
     }
 }

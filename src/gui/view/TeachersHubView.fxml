@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.TeacherHubController">
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.TeacherHubController">
    <children>
-      <TableView fx:id="tableView" layoutX="14.0" layoutY="62.0" prefHeight="290.0" prefWidth="518.0">
+      <TableView fx:id="tableViewClass" layoutX="14.0" layoutY="62.0" prefHeight="290.0" prefWidth="518.0">
         <columns>
           <TableColumn fx:id="classNameColumn" prefWidth="75.0" text="Class name" />
           <TableColumn fx:id="teacherColumn" prefWidth="75.0" text="Teacher" />
@@ -29,10 +29,10 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" text="Go to class" />
-      <Button layoutX="551.0" layoutY="360.0" mnemonicParsing="false" text="Go to student" />
-      <TextField layoutX="14.0" layoutY="27.0" />
-      <TextField layoutX="551.0" layoutY="27.0" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleGoToClass" text="Go to class" />
+      <Button layoutX="551.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleGoToStudent" text="Go to student" />
+      <TextField layoutX="14.0" layoutY="27.0" onKeyPressed="#handleSearchClass" />
+      <TextField layoutX="551.0" layoutY="27.0" onKeyPressed="#handleSearchStudent" />
       <Label layoutX="14.0" layoutY="6.0" text="Search class list" />
       <Label layoutX="551.0" layoutY="6.0" text="Search student list" />
       <Label layoutX="324.0" layoutY="8.0" text="Teachers hub">
