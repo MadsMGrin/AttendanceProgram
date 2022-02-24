@@ -1,6 +1,5 @@
 package gui.controller;
 
-import BE.Student;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +8,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.Axis;
-import javafx.scene.chart.Chart;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.DateCell;
@@ -121,7 +119,7 @@ public class StudentController implements Initializable {
 
 
 
-    public void setFields(Student selectedStudent) {
+    public void setFields(be.Student selectedStudent) {
         nameLabel.setText(selectedStudent.getName());
         classesLabel.setText("SCO,SDE,ITO");
         schoolMailLabel.setText(selectedStudent.getName()+"123@easv.dk");

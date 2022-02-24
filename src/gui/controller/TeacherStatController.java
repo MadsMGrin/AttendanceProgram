@@ -1,7 +1,7 @@
 package gui.controller;
 
-import BE.Classes;
-import BE.Student;
+import be.Classes;
+import be.Student;
 import gui.Model.StatModel;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;

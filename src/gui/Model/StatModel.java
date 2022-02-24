@@ -1,8 +1,9 @@
 package gui.Model;
 
-import BE.Student;
-import BLL.AttendanceFacade;
-import BLL.AttendanceManager;
+import be.Student;
+
+import bll.AttendanceFacade;
+import bll.AttendanceManager;
 import javafx.collections.ObservableList;
 
 public class StatModel {
