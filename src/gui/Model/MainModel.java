@@ -14,6 +14,7 @@ public class MainModel {
      AttendanceFacade bllFacade;
     private ObservableList<Classes> classesObservableList;
     private ObservableList<Student> studentObservableList;
+    
 
     public ObservableList getAllClasses() {
         classesObservableList = FXCollections.observableArrayList();
