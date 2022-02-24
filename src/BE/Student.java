@@ -1,4 +1,4 @@
-package BE;
+package be;
 
 public class Student {
     private String name;

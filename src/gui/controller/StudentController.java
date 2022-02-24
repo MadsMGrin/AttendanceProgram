@@ -1,6 +1,6 @@
 package gui.controller;
 
-import BE.Student;
+import be.Student;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

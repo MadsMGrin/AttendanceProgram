@@ -1,7 +1,7 @@
 package gui.controller;
 
-import BE.Classes;
-import BE.Student;
+import be.Classes;
+import be.Student;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

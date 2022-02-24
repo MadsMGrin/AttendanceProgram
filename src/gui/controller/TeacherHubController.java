@@ -1,8 +1,8 @@
 package gui.controller;
 
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
+import be.Classes;
+import be.Student;
+import be.Teacher;
 import gui.Model.MainModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

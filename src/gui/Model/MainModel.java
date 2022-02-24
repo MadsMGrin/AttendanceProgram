@@ -1,10 +1,9 @@
 package gui.Model;
 
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
-import BLL.AttendanceFacade;
-import BLL.AttendanceManager;
+import be.Classes;
+import be.Student;
+import bll.AttendanceFacade;
+import bll.AttendanceManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
