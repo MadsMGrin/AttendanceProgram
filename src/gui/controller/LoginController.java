@@ -3,6 +3,7 @@ package gui.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
@@ -13,8 +14,10 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
     private boolean teacherMode;
 
@@ -52,7 +55,7 @@ public class LoginController {
     private void login(boolean teacherMode) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../view/TeachersHubView.fxml"));
         if (!teacherMode)
-            root = FXMLLoader.load(getClass().getResource("../view/StudentView.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../view/StudentCheckin.fxml"));
         
         Scene scene = new Scene(root);
         Stage stage = ((Stage) this.root.getScene().getWindow());
@@ -60,5 +63,9 @@ public class LoginController {
         stage.show();
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        root.getStylesheets().add("MainCSS.css");
+    }
 }
 

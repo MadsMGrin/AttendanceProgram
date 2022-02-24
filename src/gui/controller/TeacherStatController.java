@@ -1,7 +1,8 @@
 package gui.controller;
 
-import BE.Classes;
-import BE.Student;
+import be.Classes;
+import be.Student;
+import gui.Model.StatModel;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,7 +15,9 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -27,6 +30,10 @@ import java.util.ResourceBundle;
 
 public class TeacherStatController implements Initializable {
 
+    @FXML
+    private TableColumn nameColumn;
+    @FXML
+    private TableColumn absenceColumn;
     @FXML
     private TableView<Student> tableViewStudent;
     @FXML
@@ -54,10 +61,27 @@ public class TeacherStatController implements Initializable {
 
     List<LineChart> charts;
 
+    StatModel model;
+
+    public TeacherStatController(){
+        model = new StatModel();
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         initializeLineCharts();
+        initializeColumns();
+        populateTable();
         }
+
+    private void initializeColumns() {
+        nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        absenceColumn.setCellValueFactory(new PropertyValueFactory<>("absence"));
+    }
+
+    private void populateTable() {
+        tableViewStudent.setItems(model.getStudents());
+    }
 
     private void initializeLineCharts() {
         charts = new ArrayList<>();

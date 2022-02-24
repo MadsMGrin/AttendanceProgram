@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.StudentController">
+<AnchorPane fx:id="root" prefHeight="406.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.StudentController">
    <children>
-      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="58.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/student.png" />
-         </image>
-      </ImageView>
-      <GridPane layoutX="178.0" layoutY="42.0">
+      <GridPane layoutX="177.0" layoutY="34.0" prefHeight="91.0" prefWidth="251.0">
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.20001220703125" minWidth="10.0" prefWidth="71.19996337890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.00003662109373" minWidth="10.0" prefWidth="180.00003662109373" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -29,30 +27,99 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="First Name:" />
-            <Label text="Classes:" GridPane.rowIndex="1" />
-            <Label text="School Mail:" GridPane.rowIndex="2" />
+            <Label text="First Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label text="Classes:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Label text="School Mail:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <Label fx:id="nameLabel" text="Label" GridPane.columnIndex="1" />
             <Label fx:id="classesLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="schoolMailLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="schoolMailLabel" prefHeight="18.0" prefWidth="179.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <TabPane layoutX="58.0" layoutY="162.0" prefHeight="215.0" prefWidth="498.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+      <TabPane layoutX="51.0" layoutY="131.0" prefHeight="241.0" prefWidth="428.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0">
         <tabs>
-          <Tab text="Untitled Tab 1">
+          <Tab text="1st semester">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="415.0">
                      <children>
-                        <DatePicker layoutX="155.0" layoutY="72.0" />
+                        <LineChart fx:id="chart1" prefHeight="220.0" prefWidth="202.0" title="Grade progression">
+                          <xAxis>
+                            <NumberAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis prefHeight="153.0" prefWidth="28.0" side="LEFT" upperBound="9.0" />
+                          </yAxis>
+                        </LineChart>
+                        <GridPane layoutX="215.0" layoutY="14.0" prefHeight="54.0" prefWidth="277.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.80001220703124" minWidth="10.0" prefWidth="90.39998779296874" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.00001220703123" minWidth="10.0" prefWidth="188.00001220703123" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Attendance in %" GridPane.rowIndex="1" />
+                              <Label fx:id="attendanceLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="avgGradeLabel" text="Label" GridPane.columnIndex="1" />
+                              <Label text="Average grade" />
+                              <Label text="Rank in class" GridPane.rowIndex="2" />
+                              <Label fx:id="rankLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <DatePicker fx:id="datePicker" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" />
                      </children></AnchorPane>
             </content>
           </Tab>
-          <Tab text="Untitled Tab 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
+          <Tab text="2nd semester">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="428.0">
+                     <children>
+                        <LineChart fx:id="chart2" prefHeight="220.0" prefWidth="200.0" title="Grade progression">
+                           <xAxis>
+                              <NumberAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis prefHeight="153.0" prefWidth="28.0" side="LEFT" upperBound="9.0" />
+                           </yAxis>
+                        </LineChart>
+                        <GridPane layoutX="215.0" layoutY="14.0" prefHeight="54.0" prefWidth="266.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.80001220703124" minWidth="10.0" prefWidth="89.20003662109374" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="177.19996337890623" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Attendance in %" GridPane.rowIndex="1" />
+                              <Label fx:id="attendanceLabel1" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="avgGradeLabel1" text="Label" GridPane.columnIndex="1" />
+                              <Label text="Average grade" />
+                              <Label text="Rank in class" GridPane.rowIndex="2" />
+                              <Label fx:id="rankLabel1" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <DatePicker fx:id="datePicker1" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
           </Tab>
         </tabs>
       </TabPane>
+      <Button layoutX="438.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <ImageView fx:id="studentImage" fitHeight="109.0" fitWidth="143.0" layoutX="34.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

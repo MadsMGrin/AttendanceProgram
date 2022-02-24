@@ -1,29 +1,29 @@
-package DAL;
+package dal;
 
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
+import be.Classes;
+import be.Student;
+import be.Teacher;
 import javafx.collections.ObservableList;
 
 public class DALManager implements DALInterface{
-    private AttandenceDAL attandenceDAL;
+    private AttendanceDAL attendanceDAL;
 
     public DALManager() {
-        attandenceDAL = new AttandenceDAL();
+        attendanceDAL = new AttendanceDAL();
     }
 
     @Override
     public ObservableList<Student> getStudentData() {
-        return attandenceDAL.getStudentData();
+        return attendanceDAL.getStudentData();
     }
 
     @Override
     public ObservableList<Teacher> getTeacherData() {
-        return attandenceDAL.getTeacherData();
+        return attendanceDAL.getTeacherData();
     }
 
     @Override
     public ObservableList<Classes> getClassesData() {
-        return attandenceDAL.getClassesData();
+        return attendanceDAL.getClassesData();
     }
 }

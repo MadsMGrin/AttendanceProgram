@@ -1,16 +1,15 @@
 package gui.controller;
 
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
+import be.Classes;
+import be.Student;
 import gui.Model.MainModel;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -110,5 +109,15 @@ public class TeacherHubController {
     private void handleSearchStudent(KeyEvent keyEvent) {
         ObservableList students = mainModel.queryStudents(((TextField) keyEvent.getSource()).getText());
         tableViewStudent.setItems(students);
+    }
+
+    public void handleLogOut(ActionEvent actionEvent) throws IOException {
+        Scene root = ((Scene) ((Button) actionEvent.getSource()).getScene());
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/MainView.fxml"));
+        Parent newRoot = loader.load();
+        Scene scene = new Scene(newRoot);
+        Stage stage = ((Stage) root.getWindow());
+        stage.setScene(scene);
+        stage.show();
     }
 }
