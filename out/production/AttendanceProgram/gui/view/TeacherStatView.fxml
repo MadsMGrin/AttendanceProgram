@@ -24,7 +24,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartOne" layoutX="-21.0" layoutY="-131.0" prefHeight="250.0" prefWidth="460.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <LineChart fx:id="chartOne" prefHeight="245.0" prefWidth="458.0" AnchorPane.bottomAnchor="-4.000000000000028" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
                           <xAxis>
                             <NumberAxis side="BOTTOM" />
                           </xAxis>
@@ -40,7 +40,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartTwo" prefHeight="250.0" prefWidth="460.0">
+                        <LineChart fx:id="chartTwo" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
@@ -55,7 +55,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartThree" prefHeight="250.0" prefWidth="460.0">
+                        <LineChart fx:id="chartThree" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
@@ -70,7 +70,7 @@
               <content>
                 <AnchorPane fx:id="tabAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartFour" prefHeight="250.0" prefWidth="460.0">
+                        <LineChart fx:id="chartFour" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
