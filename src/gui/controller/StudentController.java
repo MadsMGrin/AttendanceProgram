@@ -29,8 +29,6 @@ import java.util.ResourceBundle;
 
 public class StudentController implements Initializable {
     @FXML
-    private DatePicker datePicker1;
-    @FXML
     private Label attendanceLabel,avgGradeLabel,rankLabel,attendanceLabel1,avgGradeLabel1,rankLabel1;
     @FXML
     private LineChart chart1;
@@ -49,6 +47,8 @@ public class StudentController implements Initializable {
 
     @FXML
     private DatePicker datePicker;
+    @FXML
+    private DatePicker datePicker1;
 
     List<LineChart> charts;
 
@@ -114,10 +114,11 @@ public class StudentController implements Initializable {
         datePicker.setDayCellFactory(dayCellFactory);
         datePicker.setPromptText("dd/mm/yyyy");
         datePicker.setValue(LocalDate.now());
+        datePicker1.setDayCellFactory(dayCellFactory);
+        datePicker1.setPromptText("dd/mm/yyyy");
+        datePicker1.setValue(LocalDate.now());
 
     }
-
-
 
     public void setFields(be.Student selectedStudent) {
         nameLabel.setText(selectedStudent.getName());

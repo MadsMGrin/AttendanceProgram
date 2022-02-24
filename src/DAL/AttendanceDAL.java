@@ -58,7 +58,7 @@ public class AttendanceDAL {
         ObservableList<Classes> classesData = FXCollections.observableArrayList();
         classesData.add(new Classes("English", 3, "4", listOfStudents));
         classesData.add(new Classes("Computer Science", 2, "2", listOfStudents));
-        classesData.add(new Classes("Litareture", 1, "2", listOfStudents));
+        classesData.add(new Classes("Literature", 1, "2", listOfStudents));
         classesData.add(new Classes("Spanish", 2, "4", listOfStudents));
         classesData.add(new Classes("Geometry", 3, "4", listOfStudents));
         classesData.add(new Classes("Latin", 4, "4", listOfStudents));

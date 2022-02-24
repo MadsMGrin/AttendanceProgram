@@ -40,7 +40,6 @@ public class MainController implements Initializable {
         openLoginWindow(false);
     }
 
-
     private void openLoginWindow(boolean b) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/LoginView.fxml"));
         Parent newRoot = loader.load();

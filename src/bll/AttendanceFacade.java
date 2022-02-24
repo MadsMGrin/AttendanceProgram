@@ -8,9 +8,9 @@ import java.util.List;
 
 public interface AttendanceFacade {
 
-    List<Classes> getAllClasses() ;
+    List<Classes> getAllClasses();
 
-    List<Student> getAllStudent() ;
+    List<Student> getAllStudent();
 
     ObservableList queryClasses(String query);
 

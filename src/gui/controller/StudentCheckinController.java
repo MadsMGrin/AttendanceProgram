@@ -12,7 +12,6 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -28,13 +27,10 @@ public class StudentCheckinController implements Initializable {
     @FXML
     private Button checkinBtn;
 
-
-
     public void handleCheckin(ActionEvent actionEvent) {
         checkinBtn.setDisable(true);
         checkinBtn.setText("Checked in ✓");
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

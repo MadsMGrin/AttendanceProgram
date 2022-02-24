@@ -20,7 +20,6 @@ public class AttendanceManager implements AttendanceFacade {
         return dalManager.getClassesData();
     }
 
-
     public ObservableList<Student> getAllStudent() {
         return dalManager.getStudentData();
     }
@@ -33,7 +32,6 @@ public class AttendanceManager implements AttendanceFacade {
                 queriedClasses.remove(queriedClasses.size()-1);
         }
         return FXCollections.observableArrayList(queriedClasses);
-
     }
 
     @Override
@@ -44,8 +42,5 @@ public class AttendanceManager implements AttendanceFacade {
                 queriedStudents.remove(queriedStudents.size()-1);
         }
         return FXCollections.observableArrayList(queriedStudents);
-
     }
-
-
 }

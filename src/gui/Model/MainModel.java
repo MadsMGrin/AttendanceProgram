@@ -1,4 +1,4 @@
-package gui.Model;
+package gui.model;
 
 import be.Classes;
 import be.Student;
@@ -26,7 +26,6 @@ public class MainModel {
         studentObservableList.setAll(bllFacade.getAllStudent());
         return studentObservableList;
     }
-
 
     public MainModel()
     {

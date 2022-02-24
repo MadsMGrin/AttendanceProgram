@@ -2,7 +2,7 @@ package gui.controller;
 
 import be.Classes;
 import be.Student;
-import gui.Model.StatModel;
+import gui.model.StatModel;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -127,10 +127,8 @@ public class TeacherStatController implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/StudentView.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-
         StudentController studentController = loader.getController();
         studentController.setFields(selectedStudent);
-
         Stage stage = ((Stage) tabAnchor.getScene().getWindow());
         stage.setScene(scene);
     }

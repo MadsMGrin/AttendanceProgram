@@ -2,7 +2,7 @@ package gui.controller;
 
 import be.Classes;
 import be.Student;
-import gui.Model.MainModel;
+import gui.model.MainModel;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -35,7 +35,6 @@ public class TeacherHubController {
 
     MainModel mainModel= new MainModel();
 
-
     public void initialize() {
         try {
             tableViewProperty();
@@ -43,8 +42,6 @@ public class TeacherHubController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
     private void tableViewProperty() {
