@@ -16,9 +16,9 @@
                   <Font size="22.0" />
                </font>
             </Label>
-            <ImageView fitHeight="132.0" fitWidth="165.0" layoutX="234.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="easvImage" fitHeight="132.0" fitWidth="165.0" layoutX="234.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/easv-logo-transparent.png" />
+                  <Image url="@../../../Resources/easv-logo-transparent.png" />
                </image>
             </ImageView>
             <ImageView fx:id="teacherImage" fitHeight="148.0" fitWidth="156.0" layoutX="366.0" layoutY="157.0" onMouseClicked="#handleTeacher" pickOnBounds="true" preserveRatio="true">
@@ -31,6 +31,8 @@
                   <Image url="@../../../Resources/teacher.png" />
                </image>
             </ImageView>
+            <Label layoutX="416.0" layoutY="322.0" text="Teacher" />
+            <Label layoutX="131.0" layoutY="322.0" text="Student" />
          </children>
       </AnchorPane>
    </children>

@@ -13,6 +13,10 @@
     -fx-background-radius: 10;
 }
 
+.button:disabled{
+    -fx-background-color: #b3cd7e ;
+}
+
 .button:hover{
     -fx-padding: 9;
 }
@@ -41,6 +45,7 @@
 
 .table-row-cell{
     -fx-background-color: #3a6b35, #3a6b35;
+
 }
 
 .table-row-cell:hover{
@@ -60,9 +65,59 @@
 }
 
 .tab-pane .tab{
-    -fx-background-color: #1b6535;
+    -fx-background-color: #a8c66c;
     -fx-padding: 7;
     -fx-background-radius: 8;
 
     -fx-border-width:5px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #a8c66c ;
+    -fx-background-radius: 10;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 100;
+}
+
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3278fa;
+}
+
+.chart-title {
+    -fx-text-fill: #103c1f;
+    -fx-font-size: 1.6em;
+}
+
+.chart-bar {
+    -fx-background-color:#3a6b35 ;
+    -fx-border-color: black;
+    -fx-background-radius: 0;
+}
+
+
+.data0.chart-bar {
+    -fx-background-color: #3278fa;
+}
+.data1.chart-bar {
+    -fx-background-color: #dcfa32;
+}
+.data2.chart-bar {
+    -fx-background-color: #fa5032;
+}
+
+.data3.chart-bar {
+    -fx-background-color: #32fab4;
+}
+
+.data4.chart-bar {
+    -fx-background-color: #7da9fc;
 }

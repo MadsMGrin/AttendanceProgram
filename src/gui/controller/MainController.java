@@ -20,6 +20,8 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
 
     @FXML
+    private ImageView easvImage;
+    @FXML
     private ImageView studentImage;
     @FXML
     private ImageView teacherImage;
@@ -53,8 +55,10 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        //root.getStylesheets().add("MainCSS.css");
         teacherImage.setImage(new Image("teacher.png"));
         studentImage.setImage(new Image("student.png"));
+        easvImage.setImage(new Image("easv-logo-transparent.png"));
     }
 
     public void handleTeacher(javafx.scene.input.MouseEvent mouseEvent) throws IOException {
