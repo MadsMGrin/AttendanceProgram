@@ -1,4 +1,4 @@
-package BE;
+package be;
 
 import java.util.List;
 

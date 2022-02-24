@@ -1,8 +1,8 @@
-package DAL;
+package dal;
 
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
+import be.Classes;
+import be.Student;
+import be.Teacher;
 import javafx.collections.ObservableList;
 
 public interface DALInterface {

@@ -1,14 +1,13 @@
-package DAL;
-import BE.Classes;
-import BE.Student;
-import BE.Teacher;
+package dal;
+import be.Classes;
+import be.Student;
+import be.Teacher;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.List;
 
-
-public class AttandenceDAL {
+public class AttendanceDAL {
 
     private List<String> listOfClasses;
     private List<Student> listOfStudents;

@@ -1,30 +1,28 @@
-package BLL;
+package bll;
 
-import BE.Classes;
-import BE.Student;
-import DAL.DALInterface;
-import DAL.DALManager;
+import be.Classes;
+import be.Student;
+import dal.DALManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AttendanceManager implements AttendanceFacade {
 
-    private DALInterface dalInterface;
+    private DALManager dalManager;
 
     public AttendanceManager(){
-        dalInterface = new DALManager();
+        dalManager = new DALManager();
     }
 
-    public List<Classes> getAllClasses() {
-        return dalInterface.getClassesData();
+    public ObservableList<Classes> getAllClasses() {
+        return dalManager.getClassesData();
     }
 
 
-    public List<Student> getAllStudent() {
-        return dalInterface.getStudentData();
+    public ObservableList<Student> getAllStudent() {
+        return dalManager.getStudentData();
     }
 
     @Override

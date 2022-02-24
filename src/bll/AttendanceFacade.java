@@ -1,7 +1,7 @@
-package BLL;
+package bll;
 
-import BE.Classes;
-import BE.Student;
+import be.Classes;
+import be.Student;
 import javafx.collections.ObservableList;
 
 import java.util.List;
