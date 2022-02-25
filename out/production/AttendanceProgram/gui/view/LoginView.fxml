@@ -6,24 +6,30 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="270.0" prefWidth="300.0" stylesheets="@../css/MainCSS.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.LoginController">
+
+<VBox stylesheets="@../css/MainCSS.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.LoginController">
    <children>
-      <Label layoutX="53.0" layoutY="25.0" text="LOGIN MENU">
-         <font>
-            <Font name="System Bold" size="33.0" />
-         </font>
-      </Label>
-      <TextField fx:id="usernameTxt" layoutX="30.0" layoutY="100.0" prefHeight="33.0" prefWidth="241.0" />
-      <Label layoutX="30.0" layoutY="83.0" text="Username:" />
-      <Label layoutX="30.0" layoutY="151.0" text="Password:" />
-      <ButtonBar layoutX="71.0" layoutY="214.0" prefHeight="40.0" prefWidth="200.0">
-        <buttons>
-          <Button mnemonicParsing="false" onAction="#handleOk" text="Login" />
-            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
-        </buttons>
-      </ButtonBar>
-      <PasswordField fx:id="passwordTxt" layoutX="29.0" layoutY="169.0" prefHeight="34.0" prefWidth="242.0" />
+      <AnchorPane fx:id="root" prefHeight="270.0" prefWidth="300.0" stylesheets="@../css/MainCSS.css">
+         <children>
+            <Label layoutX="53.0" layoutY="25.0" text="LOGIN MENU">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTxt" layoutX="30.0" layoutY="100.0" prefHeight="33.0" prefWidth="241.0" />
+            <Label layoutX="30.0" layoutY="83.0" text="Username:" />
+            <Label layoutX="30.0" layoutY="151.0" text="Password:" />
+            <ButtonBar layoutX="71.0" layoutY="214.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#handleOk" text="Login" />
+                  <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+              </buttons>
+            </ButtonBar>
+            <PasswordField fx:id="passwordTxt" layoutX="29.0" layoutY="169.0" prefHeight="34.0" prefWidth="242.0" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</VBox>

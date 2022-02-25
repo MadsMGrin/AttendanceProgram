@@ -22,12 +22,12 @@
 
 
 .table-row-cell:selected {
-    -fx-background-color: #91AB5E;
-    -fx-text-fill: #8198C7;
-    -fx-background-insets: 0;
+    -fx-background-color: #718549;
+    -fx-table-cell-border-color: #718549;
 }
 .table-row-cell:empty{
     -fx-background-color: #e1dd72;/*Might wanna change */
+    -fx-table-cell-border-color: #e1dd72;
 }
 
 .table-row-cell{
@@ -36,5 +36,6 @@
 }
 
 .table-row-cell:hover{
-    -fx-background-color: #e1dd72;
+    -fx-background-color: #718549;
+    -fx-table-cell-border-color: #718549;
 }

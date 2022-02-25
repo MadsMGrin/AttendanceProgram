@@ -7,14 +7,18 @@
 }
 .tab-pane .tab:selected
 {
-    -fx-background-color: #103c1f;
+    -fx-background-color: #718549;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
 }
 
 .tab-pane .tab{
     -fx-background-color: #a8c66c;
     -fx-padding: 7;
     -fx-background-radius: 8;
-
     -fx-border-width:5px;
 }
 
