@@ -46,6 +46,7 @@ public class MainController implements Initializable {
         Scene scene = new Scene(newRoot);
         Stage stage = ((Stage) root.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
 
         LoginController controller = loader.getController();

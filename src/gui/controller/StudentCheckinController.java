@@ -66,6 +66,7 @@ public class StudentCheckinController implements Initializable {
         Scene scene = new Scene(newRoot);
         Stage stage = ((Stage) root.getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 }

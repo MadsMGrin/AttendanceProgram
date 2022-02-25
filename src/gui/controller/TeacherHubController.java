@@ -68,12 +68,11 @@ public class TeacherHubController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/TeacherStatView.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-
         TeacherStatController statController = loader.getController();
         statController.setFields(selectedClass);
-
         Stage stage = ((Stage) anchor.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -88,12 +87,11 @@ public class TeacherHubController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/StudentView.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
-
         StudentController studentController = loader.getController();
         studentController.setFields(selectedStudent);
-
         Stage stage = ((Stage) anchor.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
     }
 
     @FXML
@@ -116,5 +114,6 @@ public class TeacherHubController {
         Stage stage = ((Stage) root.getWindow());
         stage.setScene(scene);
         stage.show();
+        stage.centerOnScreen();
     }
 }

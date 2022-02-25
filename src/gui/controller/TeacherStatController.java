@@ -114,6 +114,7 @@ public class TeacherStatController implements Initializable {
         Scene scene = new Scene(root);
         Stage stage = ((Stage) tabAnchor.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
     }
 
     public void handleGoToStudent(ActionEvent actionEvent) throws IOException {
@@ -131,5 +132,6 @@ public class TeacherStatController implements Initializable {
         studentController.setFields(selectedStudent);
         Stage stage = ((Stage) tabAnchor.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
     }
 }

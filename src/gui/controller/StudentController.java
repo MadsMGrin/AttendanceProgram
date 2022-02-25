@@ -136,6 +136,7 @@ public class StudentController implements Initializable {
         Parent parentRoot = loader.load();
         Scene scene = new Scene(parentRoot);
         Stage stage = ((Stage) root.getScene().getWindow());
+        stage.centerOnScreen();
         stage.setScene(scene);
     }
 }
