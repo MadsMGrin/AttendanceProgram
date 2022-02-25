@@ -39,6 +39,7 @@ public class LoginController{
         Scene scene = new Scene(newRoot);
         Stage stage = new Stage();
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 
@@ -57,6 +58,7 @@ public class LoginController{
         Scene scene = new Scene(root);
         Stage stage = ((Stage) this.root.getScene().getWindow());
         stage.setScene(scene);
+        stage.centerOnScreen();
         stage.show();
     }
 }
