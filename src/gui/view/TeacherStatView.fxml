@@ -19,13 +19,13 @@
             <Font size="26.0" />
          </font>
       </Label>
-      <TabPane layoutX="38.0" layoutY="66.0" prefHeight="282.0" prefWidth="458.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="38.0">
+      <TabPane layoutX="38.0" layoutY="66.0" prefHeight="282.0" prefWidth="458.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="38.0">
         <tabs>
           <Tab text="ITO">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartOne" prefHeight="245.0" prefWidth="458.0" AnchorPane.bottomAnchor="-4.000000000000028" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                        <LineChart fx:id="chartOne" createSymbols="false" layoutY="-2.0" legendVisible="false" prefHeight="235.0" prefWidth="458.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
                           <xAxis>
                             <NumberAxis side="BOTTOM" />
                           </xAxis>
@@ -41,7 +41,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartTwo" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
+                        <LineChart fx:id="chartTwo" createSymbols="false" layoutY="-1.0" legendVisible="false" prefHeight="235.0" prefWidth="458.0" AnchorPane.topAnchor="-2.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
@@ -56,7 +56,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartThree" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
+                        <LineChart fx:id="chartThree" createSymbols="false" layoutY="-7.0" legendVisible="false" prefHeight="235.0" prefWidth="458.0" AnchorPane.topAnchor="-2.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
@@ -71,7 +71,7 @@
               <content>
                 <AnchorPane fx:id="tabAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <LineChart fx:id="chartFour" layoutY="10.0" prefHeight="245.0" prefWidth="460.0">
+                        <LineChart fx:id="chartFour" createSymbols="false" layoutY="-9.0" legendVisible="false" prefHeight="235.0" prefWidth="458.0" AnchorPane.topAnchor="-2.0">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>

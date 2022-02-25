@@ -12,20 +12,6 @@ public class AttendanceDAL {
     private List<String> listOfClasses;
     private List<Student> listOfStudents;
 
-    private void makeClassList(){
-        listOfStudents.add(new Student("Renars", "Renars.com", "English", 0.5));
-        listOfClasses.add("English");
-        listOfClasses.add("Computer Science");
-        listOfClasses.add("Literature");
-        listOfClasses.add("Spanish");
-        listOfClasses.add("Geography");
-        listOfClasses.add("Math");
-        listOfClasses.add("Latin");
-        listOfClasses.add("Physics");
-        listOfClasses.add("German");
-
-    }
-
     public ObservableList<Student> getStudentData() {
         ObservableList<Student> studentData = FXCollections.observableArrayList();
         studentData.add(new Student("Hans", "Muster", "English", 2));

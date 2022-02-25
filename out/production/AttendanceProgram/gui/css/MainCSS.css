@@ -1,9 +1,5 @@
-.root{
+.root {
     -fx-background-color: #e1dd72;
-}
-
-#datePicker{
-    -fx-background-radius: 10px 0px 0px 10px;
 }
 
 .text-field{
@@ -23,18 +19,4 @@
 
 .button:hover{
     -fx-padding: 9;
-}
-
-.date-picker-popup .spinner .button {
-    -fx-background-color: white;
-    -fx-background-radius: 10;
-}
-
-.date-picker{
-    -fx-background-color: transparent;
-}
-
-.date-picker:editable .arrow-button{
-    -fx-background-color: #91AB5E;
-    -fx-background-radius: 0px 10px 10px 0px;
 }

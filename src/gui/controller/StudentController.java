@@ -18,7 +18,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Callback;
-
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
@@ -92,7 +91,6 @@ public class StudentController implements Initializable {
     }
 
     private void initializeDatePicker() {
-
         Callback<DatePicker, DateCell> dayCellFactory = dp -> new DateCell()
         {
             @Override
@@ -115,14 +113,12 @@ public class StudentController implements Initializable {
                 }
             }
         };
-
         datePicker.setDayCellFactory(dayCellFactory);
         datePicker.setPromptText("dd/mm/yyyy");
         datePicker.setValue(LocalDate.now());
         datePicker1.setDayCellFactory(dayCellFactory);
         datePicker1.setPromptText("dd/mm/yyyy");
         datePicker1.setValue(LocalDate.now());
-
     }
 
     public void setFields(be.Student selectedStudent) {

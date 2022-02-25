@@ -9,7 +9,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("gui/view/MainView.fxml"));
-        //Parent root = FXMLLoader.load(getClass().getResource("gui/view/TeacherStatView.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.getIcons().add(new Image("easv-logo-transparent.png"));

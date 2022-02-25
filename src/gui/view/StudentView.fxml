@@ -51,7 +51,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="415.0">
                      <children>
-                        <LineChart fx:id="chart1" prefHeight="220.0" prefWidth="202.0" title="Grade progression">
+                        <LineChart fx:id="chart1" createSymbols="false" legendVisible="false" prefHeight="200.0" prefWidth="200.0" title="Grade progression">
                           <xAxis>
                             <NumberAxis side="BOTTOM" />
                           </xAxis>
@@ -86,7 +86,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="428.0">
                      <children>
-                        <LineChart fx:id="chart2" prefHeight="220.0" prefWidth="200.0" title="Grade progression">
+                        <LineChart fx:id="chart2" createSymbols="false" legendVisible="false" prefHeight="200.0" prefWidth="200.0" title="Grade progression">
                            <xAxis>
                               <NumberAxis side="BOTTOM" />
                            </xAxis>
@@ -96,7 +96,7 @@
                         </LineChart>
                         <GridPane layoutX="215.0" layoutY="14.0" prefHeight="54.0" prefWidth="266.0">
                            <columnConstraints>
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.80001220703124" minWidth="10.0" prefWidth="89.20003662109374" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.80001220703124" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="177.19996337890623" />
                            </columnConstraints>
                            <rowConstraints>
@@ -113,7 +113,7 @@
                               <Label fx:id="rankLabel1" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <DatePicker fx:id="datePicker1" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" />
+                        <DatePicker fx:id="datePicker1" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" stylesheets="@../css/DatePicker.css" />
                      </children>
                   </AnchorPane>
                </content>

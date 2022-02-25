@@ -17,7 +17,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 
@@ -50,6 +49,7 @@ public class TeacherHubController {
         teacherColumn.setCellValueFactory(new PropertyValueFactory<>("teacher"));
         tableViewClass.setItems(mainModel.getAllClasses());
     }
+
     private void tableViewStudentProperty(){
         studentNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         absenceColumn.setCellValueFactory(new PropertyValueFactory<>("absence"));
