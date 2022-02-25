@@ -21,6 +21,11 @@
     -fx-padding: 9;
 }
 
-.date-picker-popup .spinner .button .right-arrow {
+.date-picker-popup .spinner .button {
     -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+
+.date-picker{
+    -fx-background-color: transparent;
 }
