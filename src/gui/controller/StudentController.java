@@ -105,8 +105,13 @@ public class StudentController implements Initializable {
                     setStyle("-fx-background-color: #ffc0cb; -fx-text-fill: darkgray;");
                     setDisable(true);
                 }
-                else if(item.isEqual(LocalDate.of(2022,02,22))){
-                    setStyle("-fx-background-color: green; -fx-text-fill: #C1EEF2;");
+                if(item.isAfter(LocalDate.of(2022,01,01)) && item.isBefore(LocalDate.of(2022,02,24))){
+                    setStyle("-fx-background-color: #91D55E; -fx-text-fill: darkgray;");
+                    setDisable(true);
+                }
+                if(item.isEqual(LocalDate.of(2022,02,24)) || item.isEqual(LocalDate.of(2022,02,10)) || item.isEqual(LocalDate.of(2022,02,17))){
+                    setStyle("-fx-background-color: red; -fx-text-fill: #C1EEF2;");
+                    setDisable(true);
                 }
             }
         };
