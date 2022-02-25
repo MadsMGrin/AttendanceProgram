@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
@@ -95,4 +96,10 @@
          </columnResizePolicy>
       </TableView>
    </children>
+   <stylesheets>
+      <URL value="@../css/MainCSS.css" />
+      <URL value="@../css/Table.css" />
+      <URL value="@../css/Charts.css" />
+      <URL value="@../css/Tabs.css" />
+   </stylesheets>
 </AnchorPane>

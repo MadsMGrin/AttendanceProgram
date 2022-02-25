@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
@@ -11,7 +12,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="357.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.StudentCheckinController">
    <children>
@@ -58,4 +58,8 @@
       </BarChart>
       <Button layoutX="355.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleLogOut" text="Log out" />
    </children>
+   <stylesheets>
+      <URL value="@../css/MainCSS.css" />
+      <URL value="@../css/Charts.css" />
+   </stylesheets>
 </AnchorPane>

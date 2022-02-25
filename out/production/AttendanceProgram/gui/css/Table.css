@@ -1,0 +1,30 @@
+.table-view{
+    -fx-background-color: #a8c66c;
+    -fx-background-radius: 10;
+    -fx-table-cell-border-color: #3a6b35;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #a8c66c;
+    -fx-text-fill: #8198C7;
+    -fx-font-size: 14;
+    -fx-font-weight: Bold;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #124625;
+    -fx-text-fill: #8198C7;
+    -fx-background-insets: 0;
+}
+.table-row-cell:empty{
+    -fx-background-color: #e1dd72;/*Might wanna change */
+}
+
+.table-row-cell{
+    -fx-background-color: #3a6b35, #3a6b35;
+
+}
+
+.table-row-cell:hover{
+    -fx-background-color: #e1dd72;
+}
