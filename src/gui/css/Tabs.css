@@ -7,7 +7,7 @@
 }
 .tab-pane .tab:selected
 {
-    -fx-background-color: #718549;
+    -fx-background-color: #91AB5E;
 }
 
 .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {

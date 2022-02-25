@@ -2,13 +2,17 @@
     -fx-background-color: #e1dd72;
 }
 
+#datePicker{
+    -fx-background-radius: 10px 0px 0px 10px;
+}
+
 .text-field{
     -fx-background-color: #a8c66c;
     -fx-background-radius: 10;
-    -fx-padding: 10;
+    -fx-padding: 8px 0px 8px 8px;
 }
 .button{
-    -fx-background-color: #a8c66c ;
+    -fx-background-color: #a8c66c;
     -fx-padding: 8;
     -fx-background-radius: 10;
 }
@@ -28,4 +32,9 @@
 
 .date-picker{
     -fx-background-color: transparent;
+}
+
+.date-picker:editable .arrow-button{
+    -fx-background-color: #91AB5E;
+    -fx-background-radius: 0px 10px 10px 0px;
 }

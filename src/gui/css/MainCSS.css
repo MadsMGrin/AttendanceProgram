@@ -1,14 +1,14 @@
-.root{
+.root {
     -fx-background-color: #e1dd72;
 }
 
 .text-field{
     -fx-background-color: #a8c66c;
     -fx-background-radius: 10;
-    -fx-padding: 10;
+    -fx-padding: 8px 0px 8px 8px;
 }
 .button{
-    -fx-background-color: #a8c66c ;
+    -fx-background-color: #a8c66c;
     -fx-padding: 8;
     -fx-background-radius: 10;
 }
@@ -19,13 +19,4 @@
 
 .button:hover{
     -fx-padding: 9;
-}
-
-.date-picker-popup .spinner .button {
-    -fx-background-color: white;
-    -fx-background-radius: 10;
-}
-
-.date-picker{
-    -fx-background-color: transparent;
 }

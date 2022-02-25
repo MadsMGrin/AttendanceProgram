@@ -61,7 +61,7 @@
                         </LineChart>
                         <GridPane layoutX="215.0" layoutY="14.0" prefHeight="54.0" prefWidth="277.0">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.80001220703124" minWidth="10.0" prefWidth="90.39998779296874" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.00001220703123" minWidth="10.0" prefWidth="188.00001220703123" />
                           </columnConstraints>
                           <rowConstraints>
@@ -78,7 +78,7 @@
                               <Label fx:id="rankLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                            </children>
                         </GridPane>
-                        <DatePicker fx:id="datePicker" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" />
+                        <DatePicker id="datePicker" fx:id="datePicker" layoutX="214.0" layoutY="92.0" prefHeight="26.0" prefWidth="130.0" stylesheets="@../css/DatePicker.css" />
                      </children></AnchorPane>
             </content>
           </Tab>

@@ -105,7 +105,7 @@ public class StudentController implements Initializable {
                     setStyle("-fx-background-color: #ffc0cb; -fx-text-fill: darkgray;");
                     setDisable(true);
                 }
-                if(item.isAfter(LocalDate.of(2022,01,01)) && item.isBefore(LocalDate.of(2022,02,24))){
+                if(item.isAfter(LocalDate.of(2021,12,31)) && item.isBefore(LocalDate.of(2022,02,24))){
                     setStyle("-fx-background-color: #91D55E; -fx-text-fill: darkgray;");
                     setDisable(true);
                 }
