@@ -29,14 +29,14 @@
 
 .table-view .column-header-background{
     -fx-background-color: #a8c66c;
-    -fx-text-fill: white;
+    -fx-text-fill: #8198C7;
     -fx-font-size: 14;
     -fx-font-weight: Bold;
 }
 
 .table-row-cell:selected {
     -fx-background-color: #124625;
-    -fx-text-fill: white;
+    -fx-text-fill: #8198C7;
     -fx-background-insets: 0;
 }
 .table-row-cell:empty{

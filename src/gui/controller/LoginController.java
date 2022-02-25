@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginController implements Initializable {
+public class LoginController{
 
     private boolean teacherMode;
 
@@ -58,11 +58,6 @@ public class LoginController implements Initializable {
         Stage stage = ((Stage) this.root.getScene().getWindow());
         stage.setScene(scene);
         stage.show();
-    }
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        root.getStylesheets().add("MainCSS.css");
     }
 }
 

@@ -11,7 +11,6 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("gui/view/TeacherStatView.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        setUserAgentStylesheet("MainCSS.css");
     }
 
     public static void main(String[] args) {
